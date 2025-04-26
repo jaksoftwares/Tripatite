@@ -1,0 +1,45 @@
+import Link from 'next/link';
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-gray-300 py-10">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Company Info */}
+        <div>
+          <h2 className="text-2xl font-bold text-white mb-4">Tripatite Interiors</h2>
+          <p className="text-sm">
+            Transforming spaces with elegance and creativity.  
+            Your dream interiors, our passion.
+          </p>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
+          <ul className="space-y-2">
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/about-us" className="hover:underline">About Us</Link></li>
+            <li><Link href="/products" className="hover:underline">Products</Link></li>
+            <li><Link href="/services" className="hover:underline">Services</Link></li>
+            <li><Link href="/portfolio" className="hover:underline">Portfolio</Link></li>
+            <li><Link href="/contact-us" className="hover:underline">Contact</Link></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-4">Get In Touch</h3>
+          <p className="text-sm mb-2">Email: <a href="mailto:info@tripatiteinteriors.com" className="hover:underline">info@tripatiteinteriors.com</a></p>
+          <p className="text-sm">Phone: <a href="tel:+254712345678" className="hover:underline">+254 712 345 678</a></p>
+        </div>
+      </div>
+
+      {/* Bottom Line */}
+      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+        © {new Date().getFullYear()} Tripatite Interiors. All rights reserved.
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

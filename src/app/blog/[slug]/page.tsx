@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { getBlogPostBySlug } from '@/lib/blogUtils';
 import { BlogPost } from '@/types/blogPost';

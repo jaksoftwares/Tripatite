@@ -1,6 +1,7 @@
 // src/components/TeamSection.tsx
 import React from "react";
-import { companyInfo } from "@/constants/aboutUs"; // Adjust this path based on your file structure
+import { companyInfo } from "@/constants/aboutUs";
+import Image from "next/image";
 
 const TeamSection: React.FC = () => {
   return (
@@ -17,9 +18,11 @@ const TeamSection: React.FC = () => {
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
             >
               <div className="mb-4">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
+                  width={32}
+                  height={32}
                   className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200"
                 />
               </div>

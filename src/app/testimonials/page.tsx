@@ -8,7 +8,7 @@ export default function TestimonialsPage() {
     <div className="flex flex-col min-h-screen">
 
       {/* Hero Section */}
-      <section className="relative bg-[url('/images/hero.jpg')] bg-cover bg-center h-[50vh] flex items-center justify-center">
+      <section className="relative bg-[url('/testimonials/hero-testimonial.jpg')] bg-cover bg-center h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/50" />
         <h1 className="relative text-4xl md:text-5xl font-bold text-white z-10 text-center">
           What Our Clients Say

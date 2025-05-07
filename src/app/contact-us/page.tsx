@@ -20,7 +20,7 @@ export default function ContactUsPage() {
     <div className="flex flex-col min-h-screen">
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] bg-[url('/images/contact-hero.jpg')] bg-cover bg-center flex items-center justify-center">
+      <section className="relative h-[50vh] bg-[url('/contactus/contact-us.jpg')] bg-cover bg-center flex items-center justify-center">
         <div className="absolute inset-0 bg-black/60" />
         <h1 className="relative text-5xl font-bold text-white z-10 text-center">
           Contact Us

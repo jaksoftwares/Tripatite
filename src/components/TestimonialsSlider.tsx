@@ -1,6 +1,7 @@
 'use client';
 
 import { testimonials } from '@/constants/testimonials'; // Import the static testimonial data
+import Image from 'next/image';
 
 export default function TestimonialsSection() {
   return (
@@ -14,9 +15,11 @@ export default function TestimonialsSection() {
               className="bg-white p-8 rounded-lg shadow-lg max-w-xs mx-auto hover:shadow-xl transition-shadow"
             >
               <div className="mb-6">
-                <img
+                <Image
                   src={testimonial.avatar}
                   alt={testimonial.name}
+                  width={24}
+                  height={24}
                   className="mx-auto h-24 w-24 rounded-full object-cover"
                 />
               </div>

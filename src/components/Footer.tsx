@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -31,6 +32,22 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-white mb-4">Get In Touch</h3>
           <p className="text-sm mb-2">Email: <a href="mailto:info@tripatiteinteriors.com" className="hover:underline">info@tripatiteinteriors.com</a></p>
           <p className="text-sm">Phone: <a href="tel:+254712345678" className="hover:underline">+254 712 345 678</a></p>
+          
+          {/* Social Media Icons */}
+          <div className="mt-4 flex space-x-4">
+            <a href="https://facebook.com" className="text-white hover:text-gray-400">
+              <FaFacebook size={24} />
+            </a>
+            <a href="https://twitter.com" className="text-white hover:text-gray-400">
+              <FaTwitter size={24} />
+            </a>
+            <a href="https://instagram.com" className="text-white hover:text-gray-400">
+              <FaInstagram size={24} />
+            </a>
+            <a href="https://linkedin.com" className="text-white hover:text-gray-400">
+              <FaLinkedin size={24} />
+            </a>
+          </div>
         </div>
       </div>
 

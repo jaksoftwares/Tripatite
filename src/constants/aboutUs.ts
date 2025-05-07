@@ -20,21 +20,21 @@ export const companyInfo = {
         role: "Lead Designer",
         description:
           "John is a seasoned designer with over 10 years of experience in transforming residential and commercial spaces.",
-        image: "/images/john-doe.jpg",
+        image: "/profiles/joseph-kirika.jpg",
       },
       {
         name: "Jane Smith",
         role: "Project Manager",
         description:
           "Jane ensures that every project is executed to perfection and on time, managing all aspects of design and implementation.",
-        image: "/images/jane-smith.jpg",
+          image: "/profiles/joseph-kirika.jpg",
       },
       {
         name: "Jane Smith",
         role: "Project Manager",
         description:
           "Jane ensures that every project is executed to perfection and on time, managing all aspects of design and implementation.",
-        image: "/images/jane-smith.jpg",
+          image: "/profiles/joseph-kirika.jpg",
       },
       // Add more team members here
     ],

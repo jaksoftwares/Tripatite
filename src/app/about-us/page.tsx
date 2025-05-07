@@ -4,7 +4,7 @@
 import { FC } from "react";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import TeamSection from "@/components/TeamSection";
+// import TeamSection from "@/components/TeamSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import TestimonialSlider from "@/components/TestimonialsSlider";
 import OurProcessSection from "@/components/OurProcessSection";
@@ -20,7 +20,7 @@ const AboutUsPage: FC = () => {
       <AboutSection/>
 
       {/* Team Section */}
-      <TeamSection/>
+      {/* <TeamSection/> */}
 
       {/* Why Choose Us Section */}
       <WhyChooseUsSection />

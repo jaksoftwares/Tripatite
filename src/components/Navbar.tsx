@@ -1,52 +1,90 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react'; // optional icons (install lucide-react if you want icons)
+import { Menu, X } from 'lucide-react';
+
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about-us' },
+  { label: 'Products', href: '/products' },
+  { label: 'Services', href: '/services' },
+  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Testimonials', href: '/testimonials' },
+  { label: 'Contact', href: '/contact-us' },
+];
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const linkClasses = (href: string) =>
+    `relative transition-all duration-200 ease-in-out px-2 py-1 text-[1.05rem] font-semibold tracking-wide
+     hover:text-red-600 hover:-translate-y-[2px] hover:underline underline-offset-8 decoration-[2px]
+     ${
+       pathname === href
+         ? 'text-blue-700 underline underline-offset-8 decoration-[2px]'
+         : 'text-gray-800'
+     }`;
 
   return (
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-5">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-primary">
+        <Link href="/" className="text-2xl font-bold text-red-600 tracking-tight">
           Tripatite Interiors
         </Link>
 
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
-          <Link href="/">Home</Link>
-          <Link href="/about-us">About Us</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/testimonials">Testimonials</Link>
-          <Link href="/contact-us">Contact</Link>
-        </nav>
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center space-x-8">
+          <nav className="flex space-x-6">
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href} className={linkClasses(item.href)}>
+                {item.label}
+              </Link>
+            ))}
+          </nav>
 
-        {/* Mobile Hamburger */}
+          {/* Get a Quote Button */}
+          <Link
+            href="/get-a-quote"
+            className="ml-4 bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg shadow hover:bg-red-600 transition-all duration-200"
+          >
+            Get a Quote
+          </Link>
+        </div>
+
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={toggleMenu}>
-            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            {menuOpen ? <X size={28} className="text-blue-700" /> : <Menu size={28} className="text-blue-700" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <nav className="flex flex-col items-center space-y-4 py-4 text-gray-700 font-medium">
-            <Link href="/" onClick={toggleMenu}>Home</Link>
-            <Link href="/about-us" onClick={toggleMenu}>About Us</Link>
-            <Link href="/products" onClick={toggleMenu}>Products</Link>
-            <Link href="/services" onClick={toggleMenu}>Services</Link>
-            <Link href="/portfolio" onClick={toggleMenu}>Portfolio</Link>
-            <Link href="/testimonials" onClick={toggleMenu}>Testimonials</Link>
-            <Link href="/contact-us" onClick={toggleMenu}>Contact</Link>
+        <div className="md:hidden bg-white shadow-md border-t">
+          <nav className="flex flex-col items-center space-y-4 py-4 text-[1.05rem] font-semibold">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={linkClasses(item.href)}
+                onClick={toggleMenu}
+              >
+                {item.label}
+              </Link>
+            ))}
+            <Link
+              href="/get-a-quote"
+              className="bg-blue-700 text-white px-6 py-2 rounded-lg shadow hover:bg-red-600 transition-all duration-200"
+              onClick={toggleMenu}
+            >
+              Get a Quote
+            </Link>
           </nav>
         </div>
       )}

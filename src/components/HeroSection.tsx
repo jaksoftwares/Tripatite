@@ -3,7 +3,7 @@
 
 export default function HeroSection() {
   return (
-    <section className="relative flex items-center justify-center min-h-[80vh] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/hero.jpg')" }}>
+    <section className="relative flex items-center justify-center min-h-[80vh] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/bg6.jpeg')" }}>
       <div className="absolute inset-0 bg-black/50"></div> {/* Dark overlay */}
 
       <div className="relative z-10 text-center px-6 max-w-3xl">

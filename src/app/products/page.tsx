@@ -2,6 +2,7 @@
 
 import { products } from '@/constants/products';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProductsPage() {
   return (
@@ -25,9 +26,11 @@ export default function ProductsPage() {
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {products.map((product, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col items-center text-center">
-                <img
+                <Image
                   src={product.image}
                   alt={product.name}
+                  width={32}
+                  height={32}
                   className="w-32 h-32 object-contain mb-6"
                 />
                 <h3 className="text-xl font-semibold text-gray-700 mb-2">{product.name}</h3>

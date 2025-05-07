@@ -1,4 +1,5 @@
 // src/app/about-us/page.tsx
+"use client"
 
 import { FC } from "react";
 import HeroSection from "@/components/HeroSection";

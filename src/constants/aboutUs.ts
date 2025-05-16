@@ -14,29 +14,25 @@ export const companyInfo = {
       "Customer-Centric",
       "Integrity",
     ],
-    teamMembers: [
-      {
-        name: "John Doe",
-        role: "Lead Designer",
-        description:
-          "John is a seasoned designer with over 10 years of experience in transforming residential and commercial spaces.",
-        image: "/profiles/joseph-kirika.jpg",
-      },
-      {
-        name: "Jane Smith",
-        role: "Project Manager",
-        description:
-          "Jane ensures that every project is executed to perfection and on time, managing all aspects of design and implementation.",
-          image: "/profiles/joseph-kirika.jpg",
-      },
-      {
-        name: "Jane Smith",
-        role: "Project Manager",
-        description:
-          "Jane ensures that every project is executed to perfection and on time, managing all aspects of design and implementation.",
-          image: "/profiles/joseph-kirika.jpg",
-      },
-      // Add more team members here
-    ],
+    "teamMembers": [
+    {
+      "name": "Hillary Khatasio",
+      "role": "Managing Director",
+      "description": "Hillary oversees company operations, strategic planning, and overall business administration, ensuring everything runs efficiently and in alignment with the company's vision.",
+      "image": "/profiles/hilary-khatasio.jpg"
+    },
+    {
+      "name": "Joseph Kirika",
+      "role": "IT & Communications Manager",
+      "description": "Joseph manages the company’s digital presence, including social media, website, branding, client communications, and IT infrastructure.",
+      "image": "/profiles/joseph-kirika.jpg"
+    },
+    {
+      "name": "Emmanuel Mtambi",
+      "role": "Creative Director",
+      "description": "Emmanuel leads the interior design process with deep expertise in materials, aesthetics, and functional space planning, bringing creative visions to life.",
+      "image": "/profiles/emmanuel-mtambi.jpg"
+    }
+  ]
   };
   

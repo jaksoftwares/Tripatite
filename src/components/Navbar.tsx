@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -31,11 +32,22 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-5">
+      <div className="max-w-7xl mx-auto flex items-center justify-between pl-0 pr-4 py-3 md:py-5">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-red-600 tracking-tight">
-          Tripatite Interiors
-        </Link>
+    <Link href="/" className="flex items-center space-x-3">
+    <Image
+      src="/logo.png"
+      alt="Tripatite Interiors Logo"
+      width={130}
+      height={110}
+      className="object-contain"
+      priority
+    />
+    {/* <span className="text-2xl font-bold text-red-600 tracking-tight">
+      Tripatite Interiors
+    </span> */}
+  </Link>
+
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">

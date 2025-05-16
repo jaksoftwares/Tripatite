@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between pl-0 pr-4 py-3 md:py-5">
+      <div className="max-w-7xl mx-auto flex items-center justify-between pl-1 pr-4 py-3 md:py-5">
         {/* Logo */}
     <Link href="/" className="flex items-center space-x-3">
     <Image

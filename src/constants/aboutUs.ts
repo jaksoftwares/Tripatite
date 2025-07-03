@@ -32,7 +32,14 @@ export const companyInfo = {
       "role": "Creative Director",
       "description": "Emmanuel leads the interior design process with deep expertise in materials, aesthetics, and functional space planning, bringing creative visions to life.",
       "image": "/profiles/emmanuel-mtambi.jpg"
-    }
+    },
+     {
+      "name": "Sandra Wendy",
+      "role": "Internal Coordination Manager",
+      "description": "Sandra ensures smooth internal operations, coordinating between teams, managing schedules, and facilitating communication to enhance productivity.",
+      "image": "/profiles/sandra-wendy.jpg"
+    },
+
   ]
   };
   

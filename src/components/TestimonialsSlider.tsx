@@ -1,6 +1,6 @@
 'use client';
 
-import { testimonials } from '@/constants/testimonials'; // Import the static testimonial data
+import { testimonials } from '@/constants/testimonials'; 
 import Image from 'next/image';
 
 export default function TestimonialsSection() {

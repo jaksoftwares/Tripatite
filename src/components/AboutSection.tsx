@@ -45,7 +45,7 @@ const AboutSection: FC = () => {
           <p className="mt-2 text-lg text-gray-500">Meet the talented professionals behind Tripatite Interiors.</p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {companyInfo.teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md">
               <Image

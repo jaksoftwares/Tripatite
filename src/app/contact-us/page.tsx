@@ -151,7 +151,7 @@ export default function ContactUsPage() {
         <div className="w-full h-[400px]">
           <iframe
             title="Tripatite Interiors Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.803787939525!2d36.71369261531061!3d-1.3211817990303018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10b6b04d13f5%3A0x8938a94c7f6126e8!2sKaren%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1618408564951!5m2!1sen!2ske"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.941421847747!2d36.953396887158206!3d-1.1707980000000038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f41372431de7b%3A0x4ee6c12128d2c5!2sKamaki&#39;s%20Palace!5e0!3m2!1sen!2ske!4v1752151022563!5m2!1sen!2ske"            
             className="w-full h-full border-0"
             loading="lazy"
             allowFullScreen

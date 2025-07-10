@@ -56,7 +56,7 @@ const AboutSection: FC = () => {
                 className="rounded-full mb-4"
               />
               <h4 className="text-xl font-semibold text-gray-900">{member.name}</h4>
-              <p className="mt-2 text-sm text-gray-600">{member.role}</p>
+              <p className="mt-2 text-sm text-gray-950 text-">{member.role}</p>
               <p className="mt-2 text-sm text-gray-600">{member.description}</p>
             </div>
           ))}
